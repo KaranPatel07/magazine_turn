@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="turn.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    <h1>MAGAZINE</h1>
+    <div id="magazine">
+        <script>
+          
+  var jContent={
+    "page1":"http://18.224.23.171/images/magazine/p1.jpg",
+    "page2":"http://18.224.23.171/images/magazine/p2.jpg",
+    "page3":"http://18.224.23.171/images/magazine/p3.jpg",
+    "page4":"http://18.224.23.171/images/magazine/p4.jpg",
+    "page5":"http://18.224.23.171/images/magazine/p5.jpg",
+    "page6":"http://18.224.23.171/images/magazine/p6.jpg",
+    "page7":"http://18.224.23.171/images/magazine/p7.jpg",
+    "page8":"http://18.224.23.171/images/magazine/p8.jpg",
+    "page9":"http://18.224.23.171/images/magazine/p9.jpg",
+    "page10":"http://18.224.23.171/images/magazine/p10.jpg"
+  }    
+
+  
+document.getElementById("magazine").innerHTML = `
+ 
+<div><img class="photo" src="${jContent.page1}"></div>
+<div><img class="photo" src="${jContent.page2}"></div>
+<div><img class="photo" src="${jContent.page3}"></div>
+<div><img class="photo" src="${jContent.page4}"></div>
+<div><img class="photo" src="${jContent.page5}"></div>
+<div><img class="photo" src="${jContent.page6}"></div>
+<div><img class="photo" src="${jContent.page7}"></div>
+<div><img class="photo" src="${jContent.page8}"></div>
+<div><img class="photo" src="${jContent.page9}"></div>
+<div><img class="photo" src="${jContent.page10}"></div>
+ 
+`;
+</script>
+
+ </div>       
+       
+       
+      
+      <script type="text/javascript">
+            
+        $('#magazine').turn({
+          width:600,
+          height:400,
+          page:1,
+          duration:2000,
+          autocenter:true,
+          gradients: true,
+           acceleration: true});
+    
+      </script>
+</body>
+</html>
+
